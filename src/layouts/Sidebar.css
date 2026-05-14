@@ -1,0 +1,21 @@
+.sidebar {
+  background: #fff !important;
+  border-right: 1px solid var(--border-glass);
+}
+
+.sidebar .nav-link {
+  color: var(--text-secondary) !important;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+.sidebar .nav-link:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-primary) !important;
+}
+
+.sidebar .nav-link.active {
+  background: rgba(99, 102, 241, 0.08);
+  color: var(--accent-indigo) !important;
+  font-weight: 600;
+}
