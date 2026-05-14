@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: 'http://localhost:5000/api'
+    baseURL: window.location.hostname === 'localhost' 
+        ? 'http://localhost:5000/api' 
+        : 'https://backend-2-yza9.onrender.com/api'
 });
 
 // Attach token to every request if available
